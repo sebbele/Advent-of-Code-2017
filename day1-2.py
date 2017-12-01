@@ -22,7 +22,6 @@ def main(input):
         current_pos = i
         next_pos = i + jump_len
         next_pos = int(next_pos % string_len)
-        print(current_pos, next_pos)
         if input_str[next_pos] == input_str[current_pos]:
             result.append(int(input_str[i]))
     return sum(result)
